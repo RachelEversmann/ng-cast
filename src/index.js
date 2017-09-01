@@ -4,4 +4,9 @@ angular.module('video-player', [])
     'self',
     'https://www.youtube.com/**'
   ]);
+})
+
+
+.service('videos', function() {
+  return window.exampleVideoData;
 });
