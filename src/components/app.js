@@ -1,10 +1,8 @@
 angular.module('video-player')
-
 .component('app', {
   templateUrl: 'src/templates/app.html',
-  controller: function(youTube){
+  controller: function(youTube, videos){
     this.videos = [];
     this.current = null;
-    console.log(youTube.search);
   }
 });

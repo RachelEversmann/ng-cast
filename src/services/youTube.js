@@ -12,8 +12,7 @@ angular.module('video-player')
             part: 'snippet'
           }
     }).then(function succesCallback(response) {
-      console.log(response);
-      return response
+      callback(response)
     }).catch(function failCallback(response) {
       console.log("fail");
     })
